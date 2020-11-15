@@ -111,6 +111,7 @@ print(harga_rumah)
 
 print("Info Nilai Max dan Min Setiap Attribut:")
 print(attr_info)
+
 # Gunakan variabel data untuk memprediksi harga rumah
 data = {'tanah': 110, 'bangunan': 80, 'jarak_ke_pusat': 35}
 # Transformasikan data tersebut dengan dengan menggunakan attr_info yang telah
@@ -119,6 +120,7 @@ data = transform_data(data, attr_info)
 
 print("Nilai Data Baru Yang Akan diprediksi setelah di normalisasi:")
 print(data)
+
 # Hitunglah prediksi harga dari variabel data tersebut.
 harga = price_based_on_similarity(data, harga_rumah)
 print("Prediksi harga rumah: ", harga)
